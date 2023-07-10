@@ -7,5 +7,5 @@ router.register('customer', CustomerViewSet, basename='customer')
 
 
 urlpatterns = [
-    path('customer', include(router))
+    path('', include(router.urls))
 ]
