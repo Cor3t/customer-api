@@ -4,4 +4,4 @@ from .models import Customer
 class CustomerSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Customer
-        fields = "__all__"
+        fields = ['id', 'name', 'age', 'order', 'created_at', 'updated_at']
